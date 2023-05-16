@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    /* border: 1px solid red; */
+    /* height: 400px; */
+    margin: auto;
+}
+
+#marketing {
+    width: 100%;
+    height: min-content;
+    position: relative;
+    /* background-color: black; */
+}
+
+/* #marketing .container {
+    width: 100%;
+    background: black;
+} */
+
+#marketing .card {
+    width: 100%;
+    height: auto;
+    /* background: black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    /* margin-top: 15%; */
+   
+}
+
+#marketing .card .single-card {
+    flex-basis: 350px;
+    border: 1px solid black;
+    padding: 31px;
+    text-align: center;
+    flex-grow: 0.1;
+}
+
+#marketing .card .single-card .fa-brands {
+    font-size: 35px;
+    margin: 15px 0;
+}
+#marketing .card .single-card  h2 {
+    font-size: 21px;
+    text-transform: uppercase;
+}
+#marketing .card .single-card  p {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#marketing .card .single-card .btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: block;
+}
+#marketing .card .single-card .btn:hover {
+    background: linear-gradient(green,red,blue);
+}
+
+
+
+#marketing .card .single-card:hover {
+    background: #ccc;
+    color: black;
+    border-radius: 10px;
+}
+
+#marketing .card #active {
+    background: red;
+    color: white;
+}
+
+#marketing .card .single-card .fa-brands {
+    animation-name: icons;
+    animation-duration: 1s;
+    animation-iteration-count: 5;
+    animation-timing-function: linear;
+}
+#marketing .card .single-card .btn {
+    animation-name: icons;
+    animation-duration: 1s;
+    animation-iteration-count: 5;
+    animation-timing-function: linear;
+}
+  @keyframes icons {
+    0% {
+        background: red;
+        color: white;
+    }
+    40% {
+        background: blue;
+        color: white;
+    }
+    75% {
+        background: rgb(33, 230, 8);
+        color: white;
+    }
+    75% {
+        background: rgb(232, 13, 240);
+        color: white;
+    }
+  }
+ 
+@media (max-width:789px) {
+    #marketing .card .single-card  {
+        width: 98%;
+        margin: 0;
+
+    }
+}
